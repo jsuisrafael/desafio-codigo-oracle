@@ -46,9 +46,16 @@ function criptografaMensagem(botaoCriptografa) {
   }
 
 function validaCriptografia (apareceMensagem) {
+  var trocaLetras = true
 
+    if(trocaLetras = true){
+      console.log("Criptografa a mensagem");
 
-}
+    } else {
+      console.log("Tente outra vez");
+    }
+
+    }
 
 
 /* Regras Codificador:

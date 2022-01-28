@@ -73,7 +73,7 @@ body {
   font-family: 'Dongle', sans-serif;
   font-weight: 400;
   font-size: 30px;
-  color: blue;
+  color: lightcoral;
 }
 
 .crypto-message{
@@ -101,6 +101,7 @@ margin-top: 27px;
 }
 
 .btn {
+
 margin-top: 30px;
 width: 120px;
 height: 30px;
