@@ -9,15 +9,11 @@ var voltaMensagem = descriptografaMensagem(botaoDescriptografa);
 function descriptografaMensagem(botaoDescriptografa) {
 
   var capturaTexto = document.getElementById("input-texto");
-  var texto = ""
-  texto = capturaTexto.value;
+  var texto = capturaTexto.value;
   console.log(texto);
-  var textoDivi = texto.split("");
 
-  var cryptoOriginal =
-  textoDivi.toString();
-  cryptoOriginal =
-  cryptoOriginal.replaceAll("," , "");
+  var cryptoOriginal = texto.toLowerCase();
+  var cryptoOriginal = cryptoOriginal.replaceAll("," , "");
 
   // logica de descriptografia
 
@@ -34,16 +30,16 @@ function descriptografaMensagem(botaoDescriptografa) {
 
   var descrypto = document.getElementById('msg');
       descrypto.value = destrocaLetras;
-
-    // botao copiar
-
-    var botaoCopia = document.querySelector("#btn-copy").addEventListener("click", function() {
-
-    var selecionaResultado = document.querySelector("#msg").select();
-
-    var copiaResultado = document.execCommand('copy');
-
-    console.log("Copiei o resultado!");
-
-    });
 }
+
+// botao copiar
+
+var botaoCopia = document.querySelector("#btn-copy").addEventListener("click", function() {
+
+var selecionaResultado = document.querySelector("#msg").select();
+
+var copiaResultado = document.execCommand('copy');
+
+console.log("Copiei o resultado!");
+
+});
