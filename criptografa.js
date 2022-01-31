@@ -4,6 +4,10 @@ event.preventDefault();
 
 var apareceMensagem = criptografaMensagem(botaoCriptografa);
 
+var limpaMensagem = document.querySelector("#adiciona-form");
+
+limpaMensagem.reset();
+
 });
 
 function criptografaMensagem(botaoCriptografa) {
@@ -40,4 +44,13 @@ function criptografaMensagem(botaoCriptografa) {
       var copiaResultado = document.execCommand('copy');
 
       console.log("Copiei o resultado!");
+
+      // limpa o campo de mensagem após copiar
+
+      var limpaMensagem2 = document.querySelector("#adiciona-resposta");
+
+      setTimeout(function() {
+          limpaMensagem2.remove();
+      }, 3000);
+
   });

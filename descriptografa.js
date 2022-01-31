@@ -32,14 +32,21 @@ function descriptografaMensagem(botaoDescriptografa) {
       descrypto.value = destrocaLetras;
 }
 
-// botao copiar
+      // botao copiar
 
-var botaoCopia = document.querySelector("#btn-copy").addEventListener("click", function() {
+      var botaoCopia = document.querySelector("#btn-copy").addEventListener("click", function() {
 
-var selecionaResultado = document.querySelector("#msg").select();
+      var selecionaResultado = document.querySelector("#msg").select();
 
-var copiaResultado = document.execCommand('copy');
+      var copiaResultado = document.execCommand('copy');
 
-console.log("Copiei o resultado!");
+      console.log("Copiei o resultado!");
 
+      // limpa o campo de mensagem após a transição
+
+      var limpaMensagem2 = document.querySelector("#adiciona-resposta");
+
+      setTimeout(function() {
+          limpaMensagem2.remove();
+      }, 3000);
 });
