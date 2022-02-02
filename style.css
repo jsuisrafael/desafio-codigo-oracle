@@ -59,7 +59,6 @@
 }
 
 .form-box {
-
   padding: 20px;
   margin-top: 30px;
   margin-left: 350px;
@@ -91,6 +90,15 @@
   color: lightcoral;
 }
 
+.text-input {
+text-align: center;
+font-family: 'Arsenal', sans-serif;;
+font-weight: 400;
+font-size: 20px;
+color: #110E0E;
+margin-top: 27px;
+}
+
 .crypto-message{
   color: lightgreen;
   text-align: center;
@@ -99,15 +107,8 @@
   font-size: 25px;
 }
 
-.text-input {
-font-family: 'Arsenal', sans-serif;;
-font-weight: 400;
-font-size: 20px;
-color: #110E0E;
-margin-top: 27px;
-}
-
 .text-response{
+  text-align: center;
   font-family: 'Arsenal', sans-serif;;
   font-weight: 400;
   font-size: 20px;
@@ -117,7 +118,9 @@ margin-top: 27px;
 
 .btn {
 
-margin-top: 30px;
+margin-top: 40px;
+margin-bottom: -20px;
+margin-left: 43px;
 width: 120px;
 height: 30px;
 
