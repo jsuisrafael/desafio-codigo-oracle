@@ -7,16 +7,10 @@
   text-decoration: none;
 }
 
-body {
-  font-size: 100%;
-  background-color: rgb(238,174,202);
-  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
-}
-
 .container {
   width: 100%;
   height: 100%;
-  animation: changeBackgroundColor 7s infinite; /* propriedade de animação */
+  animation: changeBackgroundColor 3s infinite; /* propriedade de animação */
 }
 
 @keyframes changeBackgroundColor {
