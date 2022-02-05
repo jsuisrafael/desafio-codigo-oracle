@@ -27,9 +27,11 @@ function descriptografaMensagem(botaoDescriptografa) {
 
       // captura o input e mostra o resultado
 
-
+      const mensagemFiltrada = destrocaLetras.normalize('NFD').replace(/([\u0300-\u036f]|[^0-9a-zA-Z\s])/g, '');
+      console.log(mensagemFiltrada);
+  
   var descrypto = document.getElementById('msg');
-      descrypto.value = destrocaLetras;
+      descrypto.value = mensagemFiltrada;
 }
 
       // botao copiar

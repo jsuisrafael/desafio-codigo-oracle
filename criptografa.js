@@ -20,9 +20,7 @@ function criptografaMensagem(botaoCriptografa) {
 
   var mensagemOriginal = textoDivi.toString();
 
-  var mensagemMinuscula = mensagemOriginal.toLowerCase();
-
-  var trocaLetras = mensagemMinuscula.replaceAll("e", "enter");  //substitui o primeiro pelo segundo
+  var trocaLetras = mensagemOriginal.replaceAll("e", "enter");  //substitui o primeiro pelo segundo
 
   trocaLetras = trocaLetras.replaceAll("i", "imes");
   trocaLetras = trocaLetras.replaceAll("a", "ai")
@@ -30,8 +28,12 @@ function criptografaMensagem(botaoCriptografa) {
   trocaLetras = trocaLetras.replaceAll("u", "ufat");
   trocaLetras = trocaLetras.replaceAll("," , "");
 
+    const mensagemMinuscula= trocaLetras.toLowerCase();
+    const mensagemFiltrada = mensagemMinuscula.normalize('NFD').replace(/([\u0300-\u036f]|[^0-9a-zA-Z\s])/g, '');
+    console.log(mensagemFiltrada);
+
   var mensagemOriginal2 = document.getElementById('msg');
-      mensagemOriginal2.value = trocaLetras;
+      mensagemOriginal2.value = mensagemFiltrada;
 
   }
 
